@@ -2,17 +2,18 @@
   "name": "nextn",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://Noego-Accedie.github.io/anniv",
+
   "scripts": {
-    "dev": "next dev --turbopack -p 9002",
-    "genkit:dev": "genkit start -- tsx src/ai/dev.ts",
-    "genkit:watch": "genkit start -- tsx --watch src/ai/dev.ts",
-    "build": "cross-env NODE_ENV=production next build",
-    "start": "next start",
+    "start": "next dev",
+    "build": "next build",
+    "start-prod": "next start",
     "lint": "next lint",
-    "typecheck": "tsc --noEmit",
-    "predeploy": "npm run build",
-    "deploy": "gh-pages -d out"
+    "out": "npm run build && node -e \"require('fs').writeFileSync('./out/.nojekyll','')\"",
+    "predeploy": "npm run out",
+    "deploy": "npm run predeploy && gh-pages -d out --dotfiles"
   },
+
   "dependencies": {
     "@genkit-ai/googleai": "^1.14.1",
     "@genkit-ai/next": "^1.14.1",

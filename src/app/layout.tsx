@@ -3,8 +3,8 @@ import './globals.css';
 import { Toaster } from '@/components/ui/toaster';
 
 export const metadata: Metadata = {
-  title: 'Everlasting Embrace',
-  description: 'A place to cherish your love.',
+  title: 'Anniv',
+  description: 'Anniv website.',
 };
 
 export default function RootLayout({

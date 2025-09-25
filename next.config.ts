@@ -1,7 +1,17 @@
 import type {NextConfig} from 'next';
 
+// const isProd = true;
+/**
+ * @type {import('next').NextConfig}
+ */
+
 const nextConfig: NextConfig = {
   /* config options here */
+  output: 'export',  
+  reactStrictMode: false,
+  trailingSlash: true,
+  assetPrefix: '/anniv/',
+  basePath: '/anniv',
   typescript: {
     ignoreBuildErrors: true,
   },
@@ -9,6 +19,7 @@ const nextConfig: NextConfig = {
     ignoreDuringBuilds: true,
   },
   images: {
+    unoptimized: true,
     remotePatterns: [
       {
         protocol: 'https',
@@ -30,8 +41,9 @@ const nextConfig: NextConfig = {
       },
     ],
   },
-  output: 'export',
-  basePath: '/Noego-Accedie/anniv'
+
+  
 };
 
+/* module.exports = nextConfig*/
 export default nextConfig;
