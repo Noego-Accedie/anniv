@@ -31,8 +31,7 @@ const nextConfig: NextConfig = {
     ],
   },
   output: 'export',
-  basePath: '/anniv',
-  assetPrefix: `/anniv/`,
+  basePath: '/Noego-Accedie/anniv'
 };
 
 export default nextConfig;
