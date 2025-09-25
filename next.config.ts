@@ -30,6 +30,8 @@ const nextConfig: NextConfig = {
       },
     ],
   },
+  output: 'export',
+  basePath: '/Noego-Accedie/anniv'
 };
 
 export default nextConfig;
