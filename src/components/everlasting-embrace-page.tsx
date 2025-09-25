@@ -24,16 +24,16 @@ const staticReasons = [
 ];
 
 const images = [
-  "/images/cute.jpg",
-  "/images/look.jpg",
-  "/images/cake.jpg",
-  "/images/appday.jpg",
-  "/images/armneck.jpg",
-  "/images/sunset.jpg",
-  "/images/park.jpg",
-  "/images/mdhold.jpg",
-  "/images/imm.jpg",
-  "/images/kiss.jpg"
+  "./images/cute.jpg",
+  "./images/look.jpg",
+  "./images/cake.jpg",
+  "./images/appday.jpg",
+  "./images/armneck.jpg",
+  "./images/sunset.jpg",
+  "./images/park.jpg",
+  "./images/mdhold.jpg",
+  "./images/imm.jpg",
+  "./images/kiss.jpg"
 ]
 
 const next = [
