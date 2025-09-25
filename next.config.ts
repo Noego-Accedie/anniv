@@ -10,6 +10,7 @@ const nextConfig: NextConfig = {
   output: 'export',  
   reactStrictMode: false,
   trailingSlash: true,
+  assetPrefix: '/anniv/',
   basePath: '/anniv',
   typescript: {
     ignoreBuildErrors: true,
